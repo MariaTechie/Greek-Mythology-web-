@@ -1,0 +1,47 @@
+# Greek Mythology Project
+
+This project contains web-based code related to Greek mythology. Below is an overview of the main components and their functionalities:
+
+## Files and Directories
+
+- **index.html**: The main HTML file that structures the web page.
+  - **Header**: Contains the title and navigation links.
+  - **Main Content**: Sections for gods, heroes, and monsters, each with relevant information and images.
+  - **Footer**: Contains contact information and social media links.
+
+- **styles.css**: Contains the CSS styles for the web page, including layout, colors, and fonts.
+  - **Body Styles**: Defines the overall font, background color, and margin settings.
+  - **Header Styles**: Styles for the header, including background color, font size, and padding.
+  - **Section Styles**: Styles for the main content sections, including layout, margins, and padding.
+  - **Footer Styles**: Styles for the footer, including text alignment and background color.
+  - **Responsive Design**: Media queries to ensure the web page is responsive and looks good on different screen sizes.
+
+- **images/**: Directory containing image assets used in the project.
+- **data/**: Directory containing data files (e.g., JSON) used by the application to store information about gods, heroes, and monsters.
+
+## Libraries Used
+
+- **Bootstrap**: Used for responsive design and pre-defined CSS styles.
+- **Font Awesome**: Used for adding scalable vector icons to the web page.
+
+## How to Run
+
+1. Open `index.html` in a web browser to view the web page.
+
+## Features
+
+- **HTML Structure**: Provides the basic structure of the web page, including sections for gods, heroes, and monsters.
+- **CSS Styling**: Defines the visual appearance of the web page, including layout, colors, and fonts.
+- **JavaScript Interactivity**: Adds dynamic content and interactivity to the web page, such as displaying information about different mythological entities.
+
+## Requirements
+
+- A modern web browser (e.g., Chrome, Firefox, Edge).
+
+## Contributing
+
+Feel free to contribute to this project by submitting pull requests. Ensure your code follows the project's coding standards and includes appropriate tests.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.

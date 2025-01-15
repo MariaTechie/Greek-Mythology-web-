@@ -376,3 +376,118 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-top: 1rem;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the left by default */
+  }
+
+  .nav-left, .nav-right {
+    flex: none; /* Disable flex-grow to prevent uneven spacing */
+    width: 100%; /* Make both sections take full width */
+    text-align: center; /* Center content for better UX */
+  }
+
+  .nav-right {
+    justify-content: center; /* Center the links in the nav-right */
+  }
+}
+
+/* Adjust text size and spacing for very small screens */
+@media (max-width: 576px) {
+  .top-bar {
+      font-size: 0.85rem;
+  }
+  h1 {
+      font-size: 1.8rem;
+  }
+  p {
+      font-size: 1rem;
+  }
+  
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero-content {
+        max-width: 60%;
+    }
+    .hero-images {
+        width: 450px;
+        height: 600px;
+    }
+    .book-image:first-child {
+        top: 15px;
+        left: 15px;
+        width: 65%;
+    }
+    .book-image:last-child {
+        top: 40px;
+        right: 40px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content {
+        max-width: 80%;
+        text-align: center;
+    }
+    .hero-images {
+        width: 400px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        max-width: 90%;
+    }
+    .hero-images {
+        width: 350px;
+        height: 500px;
+    }
+    .book-image:first-child {
+        top: 10px;
+        left: 10px;
+        width: 60%;
+    }
+    .book-image:last-child {
+        top: 30px;
+        right: 30px;
+        width: 40%;
+    }
+    .container {
+        padding-top: 5%;
+    }
+    .button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        max-width: 100%;
+    }
+    .hero-images {
+        width: 300px;
+        height: 450px;
+    }
+    .book-image:first-child {
+        top: 5px;
+        left: 5px;
+        width: 55%;
+    }
+    .book-image:last-child {
+        top: 20px;
+        right: 20px;
+        width: 35%;
+    }
+    .button {
+        width: 80%;
+    }
+}
