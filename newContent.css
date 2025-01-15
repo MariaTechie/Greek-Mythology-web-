@@ -1,0 +1,206 @@
+body {padding: 0;
+    margin: 0;
+    font-family: 'Cormorant Garamond', serif !important;
+    color: #2b2b2b;
+    background-color: #f4efe6!important;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 768px) {
+    #image-section {
+        flex-direction: column; /* Stack the image and text vertically */
+        text-align: center;
+    }
+    #image-section img {
+        max-width: 100%;
+        margin-bottom: 20px; /* Add space between image and text */
+    }
+    #text-section {
+        max-width: 90%; /* Allow text section to take up more width */
+    }
+}
+
+/* Header Navigation */
+/* Top Bar */
+.top-bar {
+    background-color: #b3b792; /* Olive green */
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.top-bar a {
+    text-decoration: none!important;
+
+    color: #2b2b2b; /* Light cream text */
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+.top-bar a:hover {
+    color: #f4efe6; /* Dark grey */
+}
+
+/* Main Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdfbf7; /* Light cream */
+    padding: 2rem 2rem;
+    border-bottom: 1px solid #e5e0d8; /* Subtle border */
+}
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+.nav-left ul,
+.nav-right ul {
+    display: flex;
+    gap: 20px; /* Space between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/* Logo Styling */
+.logo { flex:1;
+    text-align: center;
+    font-family:' Playwrite Australia SA', serif;
+
+    font-size: 2rem;
+    font-weight: 0 !important;
+    color: #6d6950; 
+}
+
+
+.nav-links li {
+    position: relative; 
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+/* Pushes the group to the far right */
+
+
+.nav-links li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6d6950; /* Dark grey */
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    
+}
+
+
+.nav-links li a:hover {
+    color: #2b2b2b; /* Dark olive */
+    text-decoration: underline; /* Underline appears on hover */
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px; 
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    list-style: none;
+    position: absolute;
+    top: 100%; /* Aligns dropdown menu right below parent */
+    left: 0;
+    background-color: #e5e0d8;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Initially invisible */
+    transform: translateY(10px); /* Start slightly lower */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s; /* Smooth fade and slide */
+    z-index: 10;
+    width: 200px;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: #2b2b2b; /* Dark grey */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+.dropdown-menu a:hover {
+    
+    background-color: #b3b792;
+     /* Dark grey */
+    text-decoration: none !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    visibility: visible; /* Make dropdown visible */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide up into place */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition without delay */
+}
+
+
+
+#image-section {display: flex;
+    background-color: #f4efe6;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; 
+ padding: 0!important;
+    text-align: center;
+}
+
+#image-section img {
+    max-width: 40%;
+    padding: 0!important;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#text-section { flex: 1;
+
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+#text-section h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#text-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#text-section p:first-child {
+    margin-top: 0;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f5ed;
+    border-top: 1px solid #ddd;
+    font-size: 0.9rem;
+    color: #555;
+}
