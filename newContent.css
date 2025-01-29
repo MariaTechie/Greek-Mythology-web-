@@ -72,7 +72,7 @@ ul {
 /* Logo Styling */
 .logo { flex:1;
     text-align: center;
-    font-family:' Playwrite Australia SA', serif;
+    font-family: 'Cinzel',serif !important;
 
     font-size: 2rem;
     font-weight: 0 !important;
@@ -184,6 +184,7 @@ ul {
     font-size: 2em;
     margin-bottom: 20px;
     color: #333;
+  
 }
 
 #text-section p {

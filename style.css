@@ -60,7 +60,7 @@ ul {
 /* Logo Styling */
 .logo { flex:1;
     text-align: center;
-    font-family: 'Playwrite Australia SA',serif;
+    font-family: 'Cinzel','Playwrite Australia SA',serif;
 
     font-size: 2rem;
     font-weight: 0 !important;
