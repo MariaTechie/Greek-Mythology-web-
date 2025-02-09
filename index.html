@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet"> 
-<link rel="icon" type="image/png" href="media/L.png">
+<link rel="icon" type="image/png" href="media/logo.png">
 
 </head>
 <body>
@@ -280,6 +280,36 @@
           </button>
         </div>
       </div>
+
+      <h1>Greek Mythology Quiz</h1>
+      <div id="quiz-container">
+          <!-- Left Section: Video -->
+          <a href="Dionysus.html" class="video-link"></a>
+          <div class="video-section">
+          
+              <video  class="animated-video" autoplay loop muted playsinline>
+
+                  <source src="media/pinterestdownloader.com-1738875136.905372.mp4" type="video/mp4">
+                  Your browser does not support the video tag. 
+                 
+              </video>
+          </div>
+      
+          <!-- Right Section: Quiz Content -->
+          <div class="quiz-content">
+
+
+
+              <p id="question">Loading...</p>
+              <div id="answers"></div>
+              <button id="next-btn" class="button" onclick="nextQuestion()">Next →</button>
+              <p>Score: <span id="score">0</span></p>
+              <button id="restart-btn" class="button" onclick="restartQuiz()">Retake Test &#10227</button>
+          </div>
+      </div>
+      
+      
+      
       
 
     <footer>
@@ -296,5 +326,6 @@
           });
           
     </script>
+     <script src="script.js"></script>
 </body>
 </html>

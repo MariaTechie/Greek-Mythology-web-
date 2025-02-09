@@ -491,3 +491,162 @@ footer {
         width: 80%;
     }
 }
+/* new styles  */
+/* Style for radio button labels */
+/* Overall container - Aligns quiz and video side by side */
+#quiz-container {
+    display: flex;
+    flex-direction: row; /* Aligns video on the left, quiz on the right */
+    align-items: center;
+    justify-content: space-between; /* Ensures proper spacing */
+    width: 80%;
+    margin: auto;
+    gap: 50px; /* Space between video and quiz */
+    padding: 20px;
+}
+
+
+
+
+.video-section {
+    flex: 1; /* Takes up equal space */
+    display: flex;
+    justify-content: flex-start; /* Moves the video to the left */
+}
+
+.video-section video {
+    width: 100%;
+    max-width: 400px; /* Adjust video size */
+    border-radius: 10px; /* Optional: rounded corners */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); /* Optional: add shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.video-section video:hover {
+    transform: scale(1.05); /* Scales up smoothly on hover */
+}
+.video-link {
+    display: inline-block; /* Ensures it behaves like a block element */
+}
+.quiz-content {
+    flex: 1; /* Takes up equal space */
+    text-align: left;
+}
+/* Answer choices styling */
+#answers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Custom radio buttons */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    border: 1.5px solid #5e6c5b;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.custom-radio:hover {
+    background: #b3b792;
+    color: #faf9f6;
+    border-color: #b3b792;
+    transform: scale(1.1);
+}
+
+/* Selected answer effect */
+.custom-radio.selected {
+    background: #5e6c5b;
+    color: white;
+    font-weight: bold;
+}
+
+/* Button styling */
+#next-btn, #restart-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    ;
+}
+
+/* Shake effect */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 80% { transform: translateX(-10px); }
+    40%, 60% { transform: translateX(10px); }
+}
+
+/* Confetti effect */
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    opacity: 0.7;
+    animation: confetti-fall linear infinite;
+}
+
+@keyframes confetti-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+/* Progress Bar 
+.progress-container {
+    width: 100%;
+    background-color: #e5e0d8;
+    border-radius: 10px;
+    height: 10px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background-color: #5e6c5b;
+    transition: width 0.3s ease-in-out;
+}*/
+
+/* Next & Restart button styles 
+ #restart-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#restart-btn {
+    background: #dc3545;
+    display: none;
+}
+*/
